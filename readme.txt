@@ -6,7 +6,7 @@ Tested up to: 4.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-It will make default Text Widget to Visual Text Widget without losing data.
+It will convert default Wordpress text widget to Visual Text Widget without losing data.
 
 == Description ==
 
