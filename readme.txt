@@ -29,3 +29,6 @@ This plugin's code is available on GitHub. Please feel free to fork the reposito
 1. screenshot 1.
 2. screenshot 2.
 3. screenshot 3.
+
+== Fork notes ==
+2016-09-29: Minor modification to reflect the exact HTML markup of the default widget.

@@ -102,7 +102,10 @@ class VisualTextEditorWidget extends WP_Widget {
 		$content		= apply_filters( 'visual_editor_content', $instance['text'] );
 		echo $before_widget;
 		echo $before_title . $title . $after_title;
+		/** Mod: since (may be since v4.4.0) the widget content is wrapped in a div with a "textwidget" class */
+		echo '<div class="textwidget">';
 		echo $content;
+		echo '</div>';
 
 		echo $after_widget;
 
