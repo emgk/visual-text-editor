@@ -3,19 +3,8 @@
  */
 VisualTextEditorWidget = {
 
-    /**
-     * @var string
-     */
     currentContentId: '',
-
-    /**
-     * @var string
-     */
     currentEditorPage: '',
-
-    /**
-     * @var int
-     */
     wpFullOverlayOriginalZIndex: 0,
 
     /**
@@ -93,3 +82,5 @@ VisualTextEditorWidget = {
     }
 
 };
+
+
