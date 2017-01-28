@@ -39,10 +39,12 @@ class VisualTextEditorWidget extends WP_Widget {
 		/**
 		* Fixed Shortcode issue
 		* @since 1.2
+		* since (may be since v4.4.0) the widget content is wrapped in a div with a "textwidget" class
 		*/
+ 		echo '<div class="textwidget">';
 		$final_content = $this->generate_phpcode( do_shortcode($content) );
+ 		echo '</div>';
 
-		echo $final_content;
 		echo $after_widget;
 	} // END widget()
 
