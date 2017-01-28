@@ -40,7 +40,7 @@ class VisualTextEditorWidget extends WP_Widget {
 		* Fixed Shortcode issue
 		* @since 1.2
 		*/
-		$final_content = do_shortcode($content);
+		$final_content = $this->generate_phpcode( do_shortcode($content) );
 
 		echo $final_content;
 		echo $after_widget;
@@ -70,12 +70,17 @@ class VisualTextEditorWidget extends WP_Widget {
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 		<p>
-			<a href="javascript:VisualTextEditorWidget.showEditor('<?php echo $this->get_field_id( 'text' ); ?>');" class="button"><?php _e( 'Open Visual Editor', TEXTDOMAIN ) ?></a> 
+			<a href="javascript:VisualTextEditorWidget.showEditor('<?php echo $this->get_field_id( 'text' ); ?>');" class="button"><?php _e( 'Open Visual Editor', 'visual-text-editor' ) ?></a> 
 		</p>
 
 		<?php
 	} // END form()
 
+	public function generate_phpcode( $content ){
+
+		// Generate php code
+		return 	eval('?> ' . $content . '<?php ');
+	}
 
 	public function update( $new_instance, $old_instance ) {
 

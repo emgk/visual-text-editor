@@ -69,7 +69,7 @@ class VisualTextAdmin {
 
 	public function veTextWidgetSetting() {
 		?>
-		<h2><?php echo __('General Options',TEXTDOMAIN);?></h2>
+		<h2><?php echo __('General Options','visual-text-editor');?></h2>
 		<hr/>
 		<form action="options.php" method="post">
 		<?php
@@ -78,36 +78,36 @@ class VisualTextAdmin {
 		?>
 		<table class="form-table">
 		<tr valign="top">
-		<th scope="row"><?php echo __( 'Visual Editor height',TEXTDOMAIN );?></th>
-		<td><input type="number" min="5" max="600" name="editorheight" value="<?php echo esc_attr( get_option( 'editorheight' ) );?>"/><?php echo __( 'px',TEXTDOMAIN );?><br/><span class="description"><?php echo __( 'Number of textarea rows',TEXTDOMAIN );?> </span></td>
+		<th scope="row"><?php echo __( 'Visual Editor height','visual-text-editor' );?></th>
+		<td><input type="number" min="5" max="600" name="editorheight" value="<?php echo esc_attr( get_option( 'editorheight' ) );?>"/><?php echo __( 'px','visual-text-editor' );?><br/><span class="description"><?php echo __( 'Number of textarea rows','visual-text-editor' );?> </span></td>
 		</tr>
 		<tr>
-		<th scope="row"><?php echo __( 'Overlay Color',TEXTDOMAIN );?> </th>
-		<td><input type="text"  name="overlaycolor" data-alpha="true" id="overlaycolor" value="<?php echo esc_attr( get_option( 'overlaycolor' ) );?>"/><br/><span class="description"><?php echo __( 'Lightbox overlay color',TEXTDOMAIN );?> </span></td>
+		<th scope="row"><?php echo __( 'Overlay Color','visual-text-editor' );?> </th>
+		<td><input type="text"  name="overlaycolor" data-alpha="true" id="overlaycolor" value="<?php echo esc_attr( get_option( 'overlaycolor' ) );?>"/><br/><span class="description"><?php echo __( 'Lightbox overlay color','visual-text-editor' );?> </span></td>
 		</tr>   
 		<tr>
 		<th scope="row">
-			<?php echo __( 'Auto Paragraph',TEXTDOMAIN );?>
+			<?php echo __( 'Auto Paragraph','visual-text-editor' );?>
 		</th>
 		<td>
-			<label for="autop"><input type="checkbox" id="autop"  name="autop" data-alpha="true" id="autop" <?php checked( esc_attr( get_option( 'autop' ) ), 'on', true );?> /><?php echo __( 'Enable',TEXTDOMAIN );?></label>
-			<br/><span class="description"><?php echo __( 'Add paragraph (&lt;p&gt;&lt;/p&gt;) to content automatically.',TEXTDOMAIN );?></span>
+			<label for="autop"><input type="checkbox" id="autop"  name="autop" data-alpha="true" id="autop" <?php checked( esc_attr( get_option( 'autop' ) ), 'on', true );?> /><?php echo __( 'Enable','visual-text-editor' );?></label>
+			<br/><span class="description"><?php echo __( 'Add paragraph (&lt;p&gt;&lt;/p&gt;) to content automatically.','visual-text-editor' );?></span>
 		</td>
 		</tr>
 		<tr>
 		<th scope="row">    
-			<?php echo __( 'Media buttons',TEXTDOMAIN );?>
+			<?php echo __( 'Media buttons','visual-text-editor' );?>
 		</th>
 		<td>
-			<label for="mediabuttons"><input type="checkbox" id="mediabuttons"  name="mediabuttons" id="mediabuttons" <?php checked( esc_attr( get_option( 'mediabuttons' ) ), 'on', true );?> /><?php echo __( 'Enable',TEXTDOMAIN );?></label><br/><span class="description"><?php echo __( 'Whether to display media insert/upload buttons',TEXTDOMAIN );?></span>
+			<label for="mediabuttons"><input type="checkbox" id="mediabuttons"  name="mediabuttons" id="mediabuttons" <?php checked( esc_attr( get_option( 'mediabuttons' ) ), 'on', true );?> /><?php echo __( 'Enable','visual-text-editor' );?></label><br/><span class="description"><?php echo __( 'Whether to display media insert/upload buttons','visual-text-editor' );?></span>
 		</td>
 		</tr>
 		<tr>
 		<th scope="row">    
-			<?php echo __( 'Drag & Drop Upload',TEXTDOMAIN );?>
+			<?php echo __( 'Drag & Drop Upload','visual-text-editor' );?>
 		</th>
 		<td>
-			<label for="dragndrop"><input type="checkbox" id="dragndrop"  name="dragndrop" <?php checked( esc_attr( get_option( 'dragndrop' ) ), 'on', true );?> /><?php echo __( 'Enable',TEXTDOMAIN );?></label><Br/><span class="description"><?php echo __( 'Enable Drag & Drop Upload Support',TEXTDOMAIN );?></span>
+			<label for="dragndrop"><input type="checkbox" id="dragndrop"  name="dragndrop" <?php checked( esc_attr( get_option( 'dragndrop' ) ), 'on', true );?> /><?php echo __( 'Enable','visual-text-editor' );?></label><Br/><span class="description"><?php echo __( 'Enable Drag & Drop Upload Support','visual-text-editor' );?></span>
 		</td>
 		</tr>
 		</table>

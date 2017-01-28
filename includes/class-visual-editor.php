@@ -31,6 +31,8 @@ class VisualTextEditor {
 		add_action( 'customize_controls_print_footer_scripts', array( $this, 'customize_controls_print_footer_scripts' ), 2 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'load_plugin_assets' ) );
 
+		add_shortcode( 'vphp', array($this, 'visualtext_phpgenerate') );
+
 		if ( get_option( 'autop' ) == 'on' ) {
 			$this->autop = true;
 		}
@@ -96,5 +98,13 @@ class VisualTextEditor {
 		unregister_widget( 'WP_Widget_Text' );
 		register_widget( 'VisualTextEditorWidget' );
 	}
+
+
+	public function visualtext_phpgenerate( $atts, $content ){
+
+		$phpcontent = eval( $content );
+		return $phpcontent; 
+	}
+
 } // End VisualTextEditor
 
