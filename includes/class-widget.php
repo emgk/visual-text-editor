@@ -35,14 +35,13 @@ class VisualTextEditorWidget extends WP_Widget {
 		$content        = apply_filters( 'visual_editor_content', $instance['text'] );
 		echo $before_widget;
 		echo $before_title . $title . $after_title;
-		$final_content = $content;
-		/*
-            if (strpos($content, '<' . '?') !== false) {
-                ob_start();
-                eval('?' . '>' . $content);
-                $final_content = ob_get_clean();
-            }
-        */
+		
+		/**
+		* Fixed Shortcode issue
+		* @since 1.2
+		*/
+		$final_content = do_shortcode($content);
+
 		echo $final_content;
 		echo $after_widget;
 	} // END widget()
