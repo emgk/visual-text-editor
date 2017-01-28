@@ -1,8 +1,9 @@
 === Visual Text Editor ===
 Contributors: gk.loveweb
-Tags: visual,editor,wp, text, widget,content,admin, Bootstrap, builder, composer, CSS, drag, drop, edit, editor, file manager, fontawesome, Formatting, foundation, front end, front-end editor, frontend, icon, image, images, inline, inline editing, link, Live, page, plugin, Post, posts, TinyMCE, tinymce plugins, tinymceplugins, tool, visual, visual editor, visualeditor, wysiwyg
+Tags: visual,editor,wp, text, widget,content,admin, Bootstrap, builder, composer, CSS, drag, drop, edit, editor, file manager, fontawesome, Formatting, foundation, front end, front-end editor, frontend, icon, image, images, inline, inline editing, link, Live, page, plugin, Post, posts, TinyMCE, tinymce plugins, tinymceplugins, tool, visual, visual editor, visualeditor, wysiwyg, black, studio
 Requires at least: 3.0.1
-Tested up to: 4.5.3
+Tested up to: 4.7
+
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +19,7 @@ Replaces the default functionality of Text Widget editor with the WordPress visu
 
 However, for anyone who really wants to display a wide range of content types, from nicely formatted text, to images and other media without learning HTML and CSS.
 
-This plugin's code is available on [Github](https://github.com/gkdeveloper/visual-text-editor). Please feel free to fork the [repository](https://github.com/gkdeveloper/visual-text-editor) and send a pull request. If you find a bug in the plugin, open an issue.
+This plugin's code is available on [Github](https://github.com/emgk/visual-text-editor). Please feel free to fork the [repository](https://github.com/emgk/visual-text-editor) and send a pull request. If you find a bug in the plugin, open an issue.
 
 
 == Installation ==
@@ -36,6 +37,11 @@ This plugin's code is available on [Github](https://github.com/gkdeveloper/visua
 
 == Changelog ==
  
+= 1.2 =
+* Now you can put PHP code in widget 
+* Fixed shortcode issue
+* Added Hindi language
+
 = 1.1 =
 * Added setting page in admin panel.
 * Added option to change lightbox background color.

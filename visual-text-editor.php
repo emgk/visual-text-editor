@@ -2,10 +2,11 @@
 /*
 Plugin Name: WP Visual Text Widget
 Author: Govind Kumar
-Author URI: http://github.com/emgk
+Author URI: http://emgk.github.io
 Description: Replaces the default functionality of Text Widget editor with the WordPress visual editor, allowing you to use HTML in Widget and write them in rich text.
 Version: 1.1
 Text Domain: visual-text-editor
+Domain Path: /languages
 */
 if ( ! function_exists( 'add_action' ) ) {
 	echo 'Hi there!  I\'m just a plugin, not much I can do when called directly.';
@@ -37,3 +38,8 @@ function initOption(){
 	add_option('mediabuttons','on');
 	add_option('dragndrop','on');
 }
+
+function vc_language_domainload() {
+    load_plugin_textdomain( 'visual-text-editor', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+}
+add_action( 'plugins_loaded', 'vc_language_domainload' );
