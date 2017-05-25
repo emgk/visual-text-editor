@@ -1,5 +1,5 @@
 # Visual Text Editor
-[![AUR](https://img.shields.io/aur/license/yaourt.svg)]() 
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)]() [![Mozilla Add-on](https://img.shields.io/amo/stars/dustman.svg)]() 
 
 Contributors: gk.loveweb
 Tags: visual,editor,wp, text, widget,content,admin, Bootstrap, builder, composer, CSS, drag, drop, edit, editor, file manager, fontawesome, Formatting, foundation, front end, front-end editor, frontend, icon, image, images, inline, inline editing, link, Live, page, plugin, Post, posts, TinyMCE, tinymce plugins, tinymceplugins, tool, visual, visual editor, visualeditor, wysiwyg, black, studio
