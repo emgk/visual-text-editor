@@ -49,7 +49,6 @@ class VisualTextAdmin {
 
 	public function registerJSCSS() {
 		wp_enqueue_style( 'wp-color-picker' );
-		wp_enqueue_style( 'wp-color-picker' );
 		wp_enqueue_script( 'wp-color-picker-alpha', WPVE_URL . '/js/wp-color-picker-alpha.js', array( 'wp-color-picker' ), '1.2.2' );
 	}
 
@@ -83,7 +82,7 @@ class VisualTextAdmin {
 		</tr>
 		<tr>
 		<th scope="row"><?php echo __( 'Overlay Color','visual-text-editor' );?> </th>
-		<td><input type="text"  name="overlaycolor" data-alpha="true" id="overlaycolor" value="<?php echo esc_attr( get_option( 'overlaycolor' ) );?>"/><br/><span class="description"><?php echo __( 'Lightbox overlay color','visual-text-editor' );?> </span></td>
+		<td><input type="text"  name="overlaycolor" data-alpha="true" class="color-picker" id="overlaycolor" value="<?php echo esc_attr( get_option( 'overlaycolor' ) );?>"/><br/><span class="description"><?php echo __( 'Lightbox overlay color','visual-text-editor' );?> </span></td>
 		</tr>   
 		<tr>
 		<th scope="row">
